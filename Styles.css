@@ -61,7 +61,7 @@ input[type=text], select, textarea {
   
 }
 
-input[type=submit] {
+input[type=submit]{
   background-color: #5ce1e6;
   color: white;
   padding: 12px 20px;
@@ -69,13 +69,25 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=submit][type=button]:hover {
+  background-color: #5ce1e6;
+}
+
+input[type=button] {
+  background-color: #5ce1e6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer; 
+}
+
+input[type=button]:hover {
   background-color: #5ce1e6;
 }
 
 /* Style the container/contact section */
 .container {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f2f2f2;
   padding: 10px;
 }
@@ -118,11 +130,16 @@ text-align: center;
 .headings{
   text-align: center; 
   font-size: 30px; 
-  padding-left: 20px;
+  
 }
 
-.column.middle {
+.column.middle.container {
   width: 50%;
+  
+}
+
+.column.side {
+  width: 25%;
 }
 
 .column.middle h2 a {
@@ -132,4 +149,32 @@ text-align: center;
 
 .row{
   align-self: center;
+}
+
+.MailAddress.headings{
+  font-size: 30px;  
+}
+
+.MailAddress.about{
+  text-align: left;
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(30, 130, 148);
+  color: #f1f1f2;
+  z-index: 250;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  opacity: 0.7;
+  width: 75px;
+}
+
+#topBtn:hover {
+  opacity: 1;
 }
